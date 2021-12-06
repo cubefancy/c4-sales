@@ -18,8 +18,9 @@
 
 
 <script>
+import axios from 'axios';
 export default {
-  name: ProductList,
+  name: 'ProductList',
   props: {
     products: Array,
   },
