@@ -5,13 +5,13 @@
     </div>
     <button @click="getCart()">Load Cart</button>
     <h1>Your cart</h1>
-    <ProductList :products="products" />
+    <CartList :products="products" />
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import ProductList from '../components/ProductList.vue';
+import CartList from '../components/CartList.vue';
 
 export default {
   name: 'Cart',
@@ -26,7 +26,7 @@ export default {
   methods: {
     async getCart() {
       try {
-        let response = await axios.get("/api/user/:id");
+        let response = await axios.get("/api/user/" + name);
         let user = response.data;
         this.items = user.cart;
         return true;

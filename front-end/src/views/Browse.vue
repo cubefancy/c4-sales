@@ -1,6 +1,7 @@
 <template>
-  <div class="about">
+  <div class="browse">
     <h1>This page will have the things for sale, as well as a filter option.</h1>
+    <ProductList :products="products" />
   </div>
 </template>
 
@@ -8,7 +9,7 @@
 import axios from 'axios';
 import ProductList from "../components/ProductList.vue";
 export default {
-  name: Browse,
+  name: "Browse",
   components: {
     ProductList,
   },

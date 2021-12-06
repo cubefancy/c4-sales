@@ -3,9 +3,10 @@
     <div class="header">
       <div class="sides">
         <router-link to="/" style="text-decoration: none; color: black;">
-          <div class="logo">
-            <h1>Hello</h1>
-          </div>
+          <h1>Home</h1>
+        </router-link>
+        <router-link to="/browse" style="text-decoration: none; color: black;">
+          <h1>Browse</h1>
         </router-link>
       </div>
       <div class="input">
