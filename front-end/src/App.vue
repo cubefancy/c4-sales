@@ -1,32 +1,90 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="header">
+      <div class="sides">
+        <router-link to="/" style="text-decoration: none; color: black;">
+          <div class="logo">
+            <h1>Hello</h1>
+          </div>
+        </router-link>
+      </div>
+      <div class="input">
+        <button class="users">
+          <router-link to="/cart" style="text-decoration: none; color: black;">Cart</router-link>
+        </button>
+      </div>
     </div>
-    <router-view/>
+    <div class="content">
+      <router-view />
+    </div>
+    <div class="footer">
+      <p>link to github</p>
+    </div>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html {
+  box-sizing: border-box;
 }
 
-#nav {
-  padding: 30px;
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+.users {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 8px;
+}
+.input {
+  position: fixed;
+  right: 5px;
+}
+/* Header */
+.header {
+  display: flex;
+  padding: 10px 100px 0px 100px;
+  background-color: #5BDEFF;
+  color: #1C454F;
+}
+.stuff {
+  height: 50px;
+  display: inline;
+}
+.title {
+  margin-top: 5px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.title h1 {
+  font-size: 30px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.content {
+  padding: 20px 100px;
+  min-height: 500px;
+}
+
+/* Footer */
+.footer {
+  height: 50px;
+  padding: 20px 100px 0px 100px;
+  background: #e3e3e3;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #000;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 14px;
 }
 </style>
