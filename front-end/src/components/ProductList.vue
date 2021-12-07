@@ -9,6 +9,7 @@
           <h2>{{product.name}} -- {{product.price}}</h2>
           <div class="other">
             <p>{{product.description}}</p>
+            <button class="add">Add to Cart</button>
           </div>
         </div>
       </div>

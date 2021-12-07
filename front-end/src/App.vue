@@ -2,12 +2,14 @@
   <div id="app">
     <div class="header">
       <div class="sides">
-        <router-link to="/" style="text-decoration: none; color: black;">
-          <h1>Home</h1>
-        </router-link>
-        <router-link to="/browse" style="text-decoration: none; color: black;">
-          <h1>Browse</h1>
-        </router-link>
+        <h1>
+          <router-link to="/" style="text-decoration: none; color: black; margin-right: 8px;">
+            Home
+          </router-link>
+          <router-link to="/browse" style="text-decoration: none; color: black;">
+            Browse
+          </router-link>
+        </h1>
       </div>
       <div class="input">
         <button class="users">
@@ -19,7 +21,7 @@
       <router-view />
     </div>
     <div class="footer">
-      <p>link to github</p>
+      <p>https://github.com/cubefancy/c4-sales.git</p>
     </div>
   </div>
 </template>
@@ -28,7 +30,6 @@
 html {
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
